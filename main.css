@@ -327,7 +327,7 @@ body {
 
 @media (max-width: 600px) {
     .hero {
-        background-image: url('../img/pg.png');
+        background-image: url('img/pg.png');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -414,5 +414,3 @@ body {
     color: gold;
     font-size: 14px;
 }
-
-
