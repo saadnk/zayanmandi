@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurt</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Hero Section with Navbar -->
+    <section class="hero">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark px-3 px-lg-5">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3 fw-bold" href="#">
+                    <img src="img/saha7.png" alt="ZAYAN" class="zayan-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menus</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="conduct.html">Contact Us</a></li>
+                    </ul>
+                    <a href="#footer" class="enq fw-bold mt-3 mt-lg-0">Enquiry Now</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Content -->
+        <div class="container text-center text-white hero-content">
+            <div class="container text-center text-white hero-content">
+                <h1 class="hero-heading">Hey! Welcome to Zayan Mandi</h1>
+                <h3 class="subhead">THE ESSENCE OF AUTHENTIC FLAVORS</h3>
+                <p class="subhea">
+                    At Zayan Mandi, we serve authentic Arabian-style mandi, slow-cooked with rich spices for an
+                    unforgettable taste. Perfect for family, friends, or a solo treat.
+                </p>
+
+                <!-- Book a Table Button -->
+                <a href="tel:+919876543210" class="btn-enquiry fw-bold">Book a Table</a>
+
+                <!-- Review Box -->
+                <div class="review-box extra-space mt-3">
+                    <div class="swiper review-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review-header">
+                                    <strong class="reviewer-name">SAHAD NK</strong>
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <p class="tx">"Amazing food and great service!"</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-header">
+                                    <strong class="reviewer-name">ARIF</strong>
+                                    <span class="stars">⭐⭐⭐⭐</span>
+                                </div>
+                                <p class="tx">"Loved the mandi, authentic taste."</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="review-header">
+                                    <strong class="reviewer-name">FARHAN</strong>
+                                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <p class="tx">"Perfect place for family dinners."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.review-slider', {
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

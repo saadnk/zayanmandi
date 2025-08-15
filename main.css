@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../TEST/img/mandi23.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    /* Added horizontal breathing room */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 10);
+    z-index: 0;
+}
+
+/* Navbar inside Hero */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent !important;
+    z-index: 2;
+    padding: 12px 24px;
+    /* Balanced padding for navbar */
+}
+
+.logo-highlight {
+    color: #1A1A1A;
+}
+
+/* Hero Content */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+    /* Increased padding for balance */
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 6vw, 3.8rem);
+}
+
+.hero-content h2 {
+    font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+    color: #D4AF37;
+    margin-top: 12px;
+}
+
+.subhea {
+    font-size: clamp(1rem, 2.3vw, 1.3rem);
+    line-height: 1.7;
+    margin: 18px 0 28px;
+}
+
+.hero-content .btn {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    padding: 12px 28px;
+    border-radius: 6px;
+}
+
+/* Extra boost for larger mobile devices */
+@media (min-width: 389px) and (max-width: 450px) {
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .sunhea {
+        font-size: 1.15rem;
+    }
+
+    .hero-content .btn {
+        font-size: 1rem;
+        padding: 14px 32px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 30px 20px;
+        /* Better vertical spacing on tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content {
+        padding: 25px 15px;
+        /* Compact padding for small screens */
+    }
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* Bold but not too heavy */
+    font-size: 2.8rem;
+    letter-spacing: 0.5px;
+    color: rgb(250, 250, 250);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0);
+    /* Soft shadow for contrast */
+    margin-bottom: 15px;
+}
+
+.zayan-title {
+    font-size: 100px;
+    /* Increase text size */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between logo and text */
+}
+
+.zayan-logo {
+    height: 35px;
+    /* Increase logo size */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.btn-enquiry {
+    display: inline-block;
+    padding: 12px 24px;
+    /* Balanced height × width */
+    background-color: #EC8B22;
+    /* Warm golden-brown tone */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    /* Slightly rounded corners for rectangle */
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enquiry:hover {
+    background-color: rgb(0, 0, 0);
+    /* Darker shade on hover */
+    color: white;
+}
+
+.enq {
+    display: inline-block;
+    padding: 12px 24px;
+    /* Balanced height × width */
+    background-color: #EC8B22;
+    /* Warm golden-brown tone */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+    /* Slightly rounded corners for rectangle */
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler {
+    border: none;
+    /* remove border */
+    padding: 0.5rem;
+    /* adjust padding */
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+    /* remove Bootstrap's default image */
+    width: 24px;
+    /* icon width */
+    height: 2px;
+    /* line thickness */
+    background-color: #EC8B22;
+    /* Warm golden-brown tone */
+    position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #EC8B22;
+    left: 0;
+}
+
+.navbar-toggler-icon::before {
+    top: -8px;
+    /* space above middle line */
+}
+
+.navbar-toggler-icon::after {
+    top: 8px;
+    /* space below middle line */
+}
+
+
+/* Only apply on mobile screens */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 10);
+        /* Dark background */
+        border: 2px solid #EC8B22;
+        /* Orange border */
+        border-radius: 15px;
+        margin-top: 20px;
+        padding: 1rem 0 30px;
+    }
+
+    /* Make sure links are visible */
+    .navbar-nav .nav-link {
+        color: white !important;
+        font-weight: 500;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #EC8B22 !important;
+    }
+}
+
+.navbar {
+    display: flex;
+    /* Makes items go in a row */
+    justify-content: center;
+    /* Centers them horizontally */
+    align-items: center;
+    /* Aligns them vertically */
+    gap: 20px;
+    /* Space between items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    /* Example text color */
+}
+
+.highlight {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    /* fixed size */
+}
+
+.container-fluid {
+    margin-top: 0;
+    /* or whatever default you want */
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+    .container-fluid {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 390px) and (max-width: 450px) {
+    .hero-content {
+        margin-top: -10px;
+    }
+}
+
+.hero-heading {
+    font-family: 'Baloo 2', sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    color: #ffffff !important;
+    /* orange text */
+    font-size: 3.5rem !important;
+}
+
+
+/* Phones / smaller screens */
+@media (max-width: 600px) {
+    .hero-heading {
+        font-size: 2.6rem !important;
+    }
+}
+
+.subhead {
+    font-size: 1.4rem;
+}
+
+.subhea {
+    color: #fff0e8;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 100vh;
+        /* takes 70% of screen height on phone */
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        background-image: url('../TEST/img/pg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.review-slider-container {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 14px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+.extra-space {
+    margin-top: 70px !important; /* force push down */
+}
+.review-box {
+    max-width: 350px;              /* Box width */
+    margin: 20px auto;             /* Auto left/right centers it */
+    padding: 15px;                 /* Inner spacing */
+    border-radius: 10px;           /* Rounded corners */
+    border: 2px solid #c07514;    /* Border color */
+    background: rgba(0, 0, 0, 0.6);/* Semi-transparent background */
+    backdrop-filter: blur(5px);    /* Blur effect behind the box */
+    text-align: center;            /* Center text inside */
+    color: #fff;                   /* Text color */
+    font-size: 14px;               /* Readable font size */
+    transition: opacity 0.5s ease; /* Smooth effect */
+    min-height: 90px;              /* Minimum height */
+}
+
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+
+.stars {
+    color: gold;
+    margin-bottom: 6px;
+}
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to left */
+    text-align: left;        /* Text left aligned */
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.review-header {
+    display: flex;
+    flex-direction: row;     /* Name and stars in one row */
+    align-items: center;     /* Vertically center stars with name */
+    margin-bottom: 8px;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px; /* space between name and stars */
+}
+
+.stars {
+    color: gold;
+    font-size: 14px;
+}
