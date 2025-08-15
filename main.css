@@ -9,7 +9,7 @@ body {
 .hero {
     position: relative;
     min-height: 100vh;
-    background-image: url('img/mandi23.png');
+    background-image: url('mandi23.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -327,7 +327,7 @@ body {
 
 @media (max-width: 600px) {
     .hero {
-        background-image: url('img/pg.png');
+        background-image: url('pg.png');
         background-size: cover;
         background-repeat: no-repeat;
     }
